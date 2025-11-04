@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunlove</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            let tabBtns = document.querySelectorAll('.tab_btn');
+
+            tabBtns.forEach(tab => {
+                const btnOff = tab.querySelector('.off');
+                const btnOn = tab.querySelector('.on');
+
+                btnOff.classList.add('active');
+                btnOn.classList.remove('active');
+
+                btnOff.addEventListener('click', () => {
+                    btnOff.classList.remove('active');
+                    btnOn.classList.add('active');
+                });
+
+                btnOn.addEventListener('click', () => {
+                    btnOn.classList.remove('active');
+                    btnOff.classList.add('active');
+                });
+            });
+
+
+            var swiper = new Swiper(".swiper.look", {
+                slidesPerView: 7,
+                spaceBetween: 10,
+                pagination: {
+                    clickable: true,
+                },
+            });
+
+            var swiper = new Swiper(".swiper.headwear", {
+                slidesPerView: 4,
+                spaceBetween: 5,
+                pagination: {
+                    clickable: true,
+                },
+            });
+
+            var swiper = new Swiper(".swiper.bag", {
+                slidesPerView: 4,
+                spaceBetween: 5,
+                pagination: {
+                    clickable: true,
+                },
+            });
+
+        };//end
+    </script><!-- script -->
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#"><img src="img/logo.svg" alt="로고이미지"></a>
+                </h1><!-- .logo -->
+                <div class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#">Collection</a>
+                        </li>
+                        <li>
+                            <a href="#">Clubhouse</a>
+                        </li>
+                    </ul><!-- .gnb -->
+                </div><!-- .nav -->
+
+                <div class="util">
+                    <ul>
+                        <li><a href="#"><img src="img/마이아이콘.png" alt="마이아이콘"></a></li>
+                        <li><a href="#"><img src="img/장바구니아이콘.png" alt="장바구니아이콘"></a></li>
+                        <li><a href="#"><img src="img/검색아이콘.png" alt="검색아이콘"></a></li>
+                    </ul>
+                </div><!-- .util -->
+            </div><!-- .inner -->
+        </header><!-- .header -->
+
+
+        <div class="main">
+            <div class="inner">
+                <section class="main_visual">
+                    <div class="main_img">
+                        <li><img src="img/main-img-1.png" alt="메인이미지-1"></li>
+                        <li><img src="img/main-img-2.png" alt="메인이미지-2"></li>
+                        <li><img src="img/main-img-3.png" alt="메인이미지-3"></li>
+                    </div><!-- .main_img -->
+                    <div class="title">
+                        <h2>Warm hours only</h2>
+                        <h3>FA25 Lookbook</h3>
+                        <span><a href="#">View</a></span>
+                    </div><!-- title -->
+                </section><!-- .main_visual -->
+
+
+                <section class="section-01">
+                    <div class="category">
+                        <div class="list">
+                            <div class="item">
+                                <div class="left">
+                                    <div class="title">
+                                        <h5><a href="#">Outerwear</a></h5>
+                                    </div><!-- .title -->
+                                    <div class="img_wrap">
+                                        <a href="#">
+                                            <img src="img/category-outerwear-item.png" alt="아우터아이템이미지" class="default">
+                                            <img src="img/category-outerwear-item-hover.png" alt="아우터아이템이미지-hover"
+                                                class="hover">
+                                        </a>
+                                    </div><!-- .img_wrap -->
+                                    <div class="text">
+                                        <p>Fleece Field Jacket</p>
+                                        <b>₩ 289,000</b>
+                                    </div><!-- .text -->
+                                </div><!-- .left -->
+                                <div class="right">
+                                    <div class="img_wrap">
+                                        <a href="#">
+                                            <img src="img/category-outerwear-img.png" alt="아우터착용이미지" class="default">
+                                            <img src="img/category-outerwear-img-hover.png" alt="아우터착용이미지-hover"
+                                                class="hover">
+                                        </a>
+                                    </div><!-- .img_wrap -->
+                                </div><!-- .right -->
+                            </div><!-- .item -->
+                            <div class="item">
+                                <div class="left">
+                                    <div class="title">
+                                        <h5><a href="#">Tops</a></h5>
+                                    </div><!-- .title -->
+                                    <div class="img_wrap">
+                                        <a href="#">
+                                            <img src="img/category-tops-item.png" alt="탑아이템이미지" class="default">
+                                            <img src="img/category-tops-item-hover.png" alt="탑아이템이미지-hover"
+                                                class="hover">
+                                        </a>
+                                    </div><!-- .img_wrap -->
+                                    <div class="text">
+                                        <p>Crescent Brushed Hoodie</p>
+                                        <b>₩ 139,000</b>
+                                    </div><!-- .text -->
+                                </div><!-- .left -->
+                                <div class="right">
+                                    <div class="img_wrap">
+                                        <a href="#">
+                                            <img src="img/category-tops-img.png" alt="탑착용이미지" class="default">
+                                            <img src="img/category-tops-img-hover.png" alt="탑착용이미지-hover" class="hover">
+                                        </a>
+                                    </div><!-- .img_wrap -->
+                                </div><!-- .right -->
+                            </div><!-- .item -->
+                            <div class="item">
+                                <div class="left">
+                                    <div class="title">
+                                        <h5><a href="#">Bottoms</a></h5>
+                                    </div><!-- .title -->
+                                    <div class="img_wrap">
+                                        <a href="#">
+                                            <img src="img/category-bottoms-item.png" alt="바텀아이템이미지" class="default">
+                                            <img src="img/category-bottoms-item-hover.png" alt="바텀아이템이미지-hover"
+                                                class="hover">
+                                        </a>
+                                    </div><!-- .img_wrap -->
+                                    <div class="text">
+                                        <p>W Sway Flare Pants</p>
+                                        <b>₩ 139,000</b>
+                                    </div><!-- .text -->
+                                </div><!-- .left -->
+                                <div class="right">
+                                    <div class="img_wrap">
+                                        <a href="#">
+                                            <img src="img/category-bottoms-img.png" alt="바텀착용이미지" class="default">
+                                            <img src="img/category-bottoms-img-hover.png" alt="바텀착용이미지-hover"
+                                                class="hover">
+                                        </a>
+                                    </div><!-- .img_wrap -->
+                                </div><!-- .right -->
+                            </div><!-- .item -->
+                            <div class="item">
+                                <div class="left">
+                                    <div class="title">
+                                        <h5><a href="#">Accessories</a></h5>
+                                    </div><!-- .title -->
+                                    <div class="img_wrap">
+                                        <a href="#">
+                                            <img src="img/category-accessories-item.png" alt="악세사리아이템이미지"
+                                                class="default">
+                                            <img src="img/category-accessories-item-hover.png" alt="악세사리아이템이미지-hover"
+                                                class="hover">
+                                        </a>
+                                    </div><!-- .img_wrap -->
+                                    <div class="text">
+                                        <p>Merry Stripe Muffler</p>
+                                        <b>₩ 79,000</b>
+                                    </div><!-- .text -->
+                                </div><!-- .left -->
+                                <div class="right">
+                                    <div class="img_wrap">
+                                        <a href="#">
+                                            <img src="img/category-accessories-img.png" alt="악세사리착용이미지" class="default">
+                                            <img src="img/category-accessories-img-hover.png" alt="악세사리착용이미지-hover"
+                                                class="hover">
+                                        </a>
+                                    </div><!-- .img_wrap -->
+                                </div><!-- .right -->
+                            </div><!-- .item -->
+                        </div><!-- .list -->
+                    </div><!-- .category -->
+
+                    <div class="look">
+                        <div class="list">
+                            <div class="swiper look">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-1.png" alt="룩이미지-1">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-2.png" alt="룩이미지-2">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-3.png" alt="룩이미지-3">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-4.png" alt="룩이미지-4">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-5.png" alt="룩이미지-5">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-6.png" alt="룩이미지-6">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-7.png" alt="룩이미지-7">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-8.png" alt="룩이미지-8">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-9.png" alt="룩이미지-9">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-10.png" alt="룩이미지-10">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="img_wrap">
+                                                    <img src="img/look-11.png" alt="룩이미지-11">
+                                                </div><!-- .img_wrap -->
+                                            </div><!-- .item -->
+                                        </a>
+                                    </div><!-- swiper-slide -->
+                                </div><!-- swiper-wrapper -->
+                            </div><!-- swiper look -->
+                        </div><!-- .list -->
+                    </div><!-- .look -->
+                </section><!-- .section-01 -->
+
+
+                <section class="section-02">
+                    <div class="flyLight">
+                        <div class="left">
+                            <div class="img_wrap">
+                                <a href="#"><img src="img/Fly Light Down Jacket-main-img.png"
+                                        alt="Fly Light Down Jacket-대표이미지"></a>
+                            </div><!-- .img_wrap -->
+                            <div class="text">
+                                <h4>Fly Light Down Jacket</h4>
+                            </div><!-- .text -->
+                        </div><!-- .left -->
+
+                        <div class="right">
+                            <div class="list">
+                                <div class="box">
+                                    <div class="w">
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- .w -->
+                                    <div class="h">
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- .h -->
+                                </div><!-- .box -->
+                                <div class="item">
+                                    <div class="tab_btn">
+                                        <button class="off active"><img src="img/찜아이콘-OFF.png" alt="찜아이콘-off"></button>
+                                        <button class="on"><img src="img/찜아이콘-ON.png" alt="찜아이콘-on"></button>
+                                    </div><!-- .tab_btn -->
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="img/Fly Light Down Jacket-item-1.png" alt="Yellow-아이템이미지"
+                                                class="default">
+                                            <img src="img/Fly Light Down Jacket-item-1-hover.png"
+                                                alt="Yellow-아이템이미지-hover" class="hover">
+                                        </div><!-- .img_wrap -->
+                                        <div class="text">
+                                            <p>Hooded Fly Light Down Jacket<br>- Yellow</p>
+                                            <b>₩ 319,000</b>
+                                        </div><!-- .text -->
+                                    </a>
+                                </div><!-- .item -->
+                                <div class="item">
+                                    <div class="tab_btn">
+                                        <button class="off active"><img src="img/찜아이콘-OFF.png" alt="찜아이콘-off"></button>
+                                        <button class="on"><img src="img/찜아이콘-ON.png" alt="찜아이콘-on"></button>
+                                    </div><!-- .tab_btn -->
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="img/Fly Light Down Jacket-item-2.png" alt="Stone-아이템이미지"
+                                                class="default">
+                                            <img src="img/Fly Light Down Jacket-item-2-hover.png"
+                                                alt="Stone-아이템이미지-hover" class="hover">
+                                        </div><!-- .img_wrap -->
+                                        <div class="text">
+                                            <p>Hooded Fly Light Down Jacket<br>- Stone</p>
+                                            <b>₩ 319,000</b>
+                                        </div><!-- .text -->
+                                    </a>
+                                </div><!-- .item -->
+                                <div class="item">
+                                    <div class="tab_btn">
+                                        <button class="off active"><img src="img/찜아이콘-OFF.png" alt="찜아이콘-off"></button>
+                                        <button class="on"><img src="img/찜아이콘-ON.png" alt="찜아이콘-on"></button>
+                                    </div><!-- .tab_btn -->
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="img/Fly Light Down Jacket-item-3.png" alt="Grey-아이템이미지"
+                                                class="default">
+                                            <img src="img/Fly Light Down Jacket-item-3-hover.png"
+                                                alt="Grey-아이템이미지-hover" class="hover">
+                                        </div><!-- .img_wrap -->
+                                        <div class="text">
+                                            <p>Hooded Fly Light Down Jacket<br>- Grey</p>
+                                            <b>₩ 319,000</b>
+                                        </div><!-- .text -->
+                                    </a>
+                                </div><!-- .item -->
+                                <div class="item">
+                                    <div class="tab_btn">
+                                        <button class="off active"><img src="img/찜아이콘-OFF.png" alt="찜아이콘-off"></button>
+                                        <button class="on"><img src="img/찜아이콘-ON.png" alt="찜아이콘-on"></button>
+                                    </div><!-- .tab_btn -->
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="img/Fly Light Down Jacket-item-4.png" alt="Light Blue-아이템이미지"
+                                                class="default">
+                                            <img src="img/Fly Light Down Jacket-item-4-hover.png"
+                                                alt="Light Blue-아이템이미지-hover" class="hover">
+                                        </div><!-- .img_wrap -->
+                                        <div class="text">
+                                            <p>Hooded Fly Light Down Jacket<br>- Light Blue</p>
+                                            <b>₩ 319,000</b>
+                                        </div><!-- .text -->
+                                    </a>
+                                </div><!-- .item -->
+                                <div class="item">
+                                    <div class="img_wrap">
+                                        <img src="img/sunlove logo.svg" alt="썬러브로고이미지">
+                                    </div><!-- .img_wrap -->
+                                </div><!-- .item -->
+                                <div class="item">
+                                    <div class="tab_btn">
+                                        <button class="off active"><img src="img/찜아이콘-OFF.png" alt="찜아이콘-off"></button>
+                                        <button class="on"><img src="img/찜아이콘-ON.png" alt="찜아이콘-on"></button>
+                                    </div><!-- .tab_btn -->
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="img/Fly Light Down Jacket-item-5.png" alt="Pink-아이템이미지"
+                                                class="default">
+                                            <img src="img/Fly Light Down Jacket-item-5-hover.png"
+                                                alt="Pink-아이템이미지-hover" class="hover">
+                                        </div><!-- .img_wrap -->
+                                        <div class="text">
+                                            <p>Fly Light Down Jacket<br>- Pink</p>
+                                            <b>₩ 299,000</b>
+                                        </div><!-- .text -->
+                                    </a>
+                                </div><!-- .item -->
+                                <div class="item">
+                                    <div class="tab_btn">
+                                        <button class="off active"><img src="img/찜아이콘-OFF.png" alt="찜아이콘-off"></button>
+                                        <button class="on"><img src="img/찜아이콘-ON.png" alt="찜아이콘-on"></button>
+                                    </div><!-- .tab_btn -->
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="img/Fly Light Down Jacket-item-6.png" alt="Cream-아이템이미지"
+                                                class="default">
+                                            <img src="img/Fly Light Down Jacket-item-6-hover.png"
+                                                alt="Cream-아이템이미지-hover" class="hover">
+                                        </div><!-- .img_wrap -->
+                                        <div class="text">
+                                            <p>Fly Light Down Jacket<br>- Cream</p>
+                                            <b>₩ 299,000</b>
+                                        </div><!-- .text -->
+                                    </a>
+                                </div><!-- .item -->
+                                <div class="item">
+                                    <div class="tab_btn">
+                                        <button class="off active"><img src="img/찜아이콘-OFF.png" alt="찜아이콘-off"></button>
+                                        <button class="on"><img src="img/찜아이콘-ON.png" alt="찜아이콘-on"></button>
+                                    </div><!-- .tab_btn -->
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="img/Fly Light Down Jacket-item-7.png" alt="Khaki-아이템이미지"
+                                                class="default">
+                                            <img src="img/Fly Light Down Jacket-item-7-hover.png"
+                                                alt="Khaki-아이템이미지-hover" class="hover">
+                                        </div><!-- .img_wrap -->
+                                        <div class="text">
+                                            <p>Fly Light Down Jacket<br>- Khaki</p>
+                                            <b>₩ 299,000</b>
+                                        </div><!-- .text -->
+                                    </a>
+                                </div><!-- .item -->
+                                <div class="item">
+                                    <div class="tab_btn">
+                                        <button class="off active"><img src="img/찜아이콘-OFF.png" alt="찜아이콘-off"></button>
+                                        <button class="on"><img src="img/찜아이콘-ON.png" alt="찜아이콘-on"></button>
+                                    </div><!-- .tab_btn -->
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="img/Fly Light Down Jacket-item-8.png" alt="Charcoal-아이템이미지"
+                                                class="default">
+                                            <img src="img/Fly Light Down Jacket-item-8-hover.png"
+                                                alt="Charcoal-아이템이미지-hover" class="hover">
+                                        </div><!-- .img_wrap -->
+                                        <div class="text">
+                                            <p>Fly Light Down Jacket<br>- Charcoal</p>
+                                            <b>₩ 299,000</b>
+                                        </div><!-- .text -->
+                                    </a>
+                                </div><!-- .item -->
+                            </div><!-- .list -->
+                        </div><!-- .right -->
+                    </div><!-- .flyLight -->
+                </section><!-- .section-02 -->
+
+
+                <section class="section-03">
+                    <div class="hb">
+                    <div class="head">
+                        <div class="top">
+                            <div class="item">
+                                <div class="img_wrap">
+                                    <img src="img/Headwear-main-img.png" alt="모자대표이미지">
+                                </div><!-- .img_wrap -->
+                                <div class="text">
+                                    <h4>Headwear</h4>
+                                </div><!-- .text -->
+                            </div><!-- .item -->
+                        </div><!-- .top -->
+                        <div class="bottom">
+                            <div class="list">
+                                <div class="swiper headwear">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-1.png" alt="모자아이템이미지-1">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Tweedy Crochet Bucket Hat</p>
+                                                        <b>₩ 79,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-2.png" alt="모자아이템이미지-2">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Cable Visor Beanie</p>
+                                                        <b>₩ 69,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-3.png" alt="모자아이템이미지-3">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Knit Bucket Hat</p>
+                                                        <b>₩ 79,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-4.png" alt="모자아이템이미지-4">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Tassel Beanie</p>
+                                                        <b>₩ 79,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-5.png" alt="모자아이템이미지-5">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Polartec® Alpha® Beanie</p>
+                                                        <b>₩ 49,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-6.png" alt="모자아이템이미지-6">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Heather Boucle Beanie</p>
+                                                        <b>₩ 55,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-7.png" alt="모자아이템이미지-7">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Cali Shaggy Beanie</p>
+                                                        <b>₩ 49,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-8.png" alt="모자아이템이미지-8">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>72 Stripe beanie</p>
+                                                        <b>₩ 55,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-9.png" alt="모자아이템이미지-9">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>72 Wool Cap</p>
+                                                        <b>₩ 79,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-10.png" alt="모자아이템이미지-10">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Sherpa Fleece Earflap Cap</p>
+                                                        <b>₩ 79,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-11.png" alt="모자아이템이미지-11">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Trail Fleece Earflap Cap</p>
+                                                        <b>₩ 79,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/Headwear-item-12.png" alt="모자아이템이미지-12">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Wool Flat Cap</p>
+                                                        <b>₩ 79,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+
+                                    </div><!-- swiper-wrapper -->
+                                </div><!-- swiper look -->
+                            </div><!-- .list -->
+                        </div><!-- .bottom -->
+                    </div><!-- .head -->
+
+                    <div class="bag">
+                        <div class="top">
+                            <div class="item">
+                                <div class="img_wrap">
+                                    <img src="img/bag-main-img.png" alt="가방대표이미지">
+                                </div><!-- .img_wrap -->
+                                <div class="text">
+                                    <h4>Bag</h4>
+                                </div><!-- .text -->
+                            </div><!-- .item -->
+                        </div><!-- .top -->
+                        <div class="bottom">
+                            <div class="list">
+                                <div class="swiper bag">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/bag-item-1.png" alt="가방아이템이미지-1">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Pebble Waist Pack</p>
+                                                        <b>₩ 49,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/bag-item-2.png" alt="가방아이템이미지-2">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Tourer Gym Sacke</p>
+                                                        <b>₩ 109,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/bag-item-3.png" alt="가방아이템이미지-3">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Explorer Daypack</p>
+                                                        <b>₩ 119,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/bag-item-4.png" alt="가방아이템이미지-4">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Flannel Explorer Daypack</p>
+                                                        <b>₩ 129,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/bag-item-5.png" alt="가방아이템이미지-5">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Flannel Micro Duffle Bag</p>
+                                                        <b>₩ 89,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/bag-item-6.png" alt="가방아이템이미지-6">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Micro Duffle Bag</p>
+                                                        <b>₩ 79,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/bag-item-7.png" alt="가방아이템이미지-7">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>[The Fantastic Four] Tote Bag</p>
+                                                        <b>₩ 45,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="tab_btn">
+                                                    <button class="off active"><img src="img/찜아이콘-OFF.png"
+                                                            alt="찜아이콘-off"></button>
+                                                    <button class="on"><img src="img/찜아이콘-ON.png"
+                                                            alt="찜아이콘-on"></button>
+                                                </div><!-- .tab_btn -->
+                                                <a href="#">
+                                                    <div class="img_wrap">
+                                                        <img src="img/bag-item-8.png" alt="가방아이템이미지-8">
+                                                    </div><!-- .img_wrap -->
+                                                    <div class="text">
+                                                        <p>Nep Mail Bag</p>
+                                                        <b>₩ 135,000</b>
+                                                    </div><!-- .text -->
+                                                </a>
+                                            </div><!-- .item -->
+                                        </div><!-- swiper-slide -->
+                                    </div><!-- swiper-wrapper -->
+                                </div><!-- swiper look -->
+                            </div><!-- .list -->
+                        </div><!-- .bottom -->
+
+                    </div><!-- bag -->
+                    </div><!-- .hb -->
+                </section><!-- .section-03 -->
+            </div><!-- .inner -->
+        </div><!-- .main -->
+
+
+        <footer class="footer">
+            <div class="inner">
+                <div class="ticker">
+                    <div class="ticker__wrap">
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                        <span>SUN LOVE</span>
+                    </div><!-- .ticker__wrap -->
+                </div><!-- .ticker -->
+
+                <div class="footer_logo">
+                    <h2 class="logo">
+                        <a href="#"><img src="img/sunlove logo.svg" alt="썬러브로고이미지"></a>
+                    </h2><!-- .logo -->
+                </div><!-- .footer_logo -->
+
+                <div class="info_wrap">
+                    <div class="footer_nav">
+                        <ul class="gnb_group">
+                            <div class="gnb_01">
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Stores</a></li>
+                            </div><!-- .gnb_01 -->
+                            <div class="gnb_02">
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Shipping & Returns</a></li>
+                            </div><!-- .gnb_02 -->
+                        </ul><!-- .gnb_group -->
+
+                        <ul class="info">
+                            <li><a href="#">주식회사 제이케이엔디</a></li>
+                            <li><a href="#">사업자등록번호: 361-86-01005</a></li>
+                            <li><a href="#">대표: 조나단</a></li>
+                            <li><a href="#">주소: 서울특별시 성동구 아차산로 159(성수동2가, 제이케이앤디)</a></li>
+                            <li><a href="#">대표전화: 070-4048-5377</a></li>
+                            <li><a href="#">통신판매 2024-서울성동-1504</a></li>
+                        </ul><!-- .info -->
+                    </div><!-- .footer_nav -->
+
+                    <div class="sns">
+                        <p>©2025 SUNLOVE All rights reserved.</p>
+                        <ul class="gnb">
+                            <li><a href="#"><img src="img/카카오톡아이콘.png" alt="카카오톡아이콘이미지"></a></li>
+                            <li><a href="#"><img src="img/인스타아이콘.png" alt="인스타아이콘이미지"></a></li>
+                            <li><a href="#"><img src="img/페이스북아이콘.png" alt="페이스북아이콘이미지"></a></li>
+                        </ul><!-- .gnb -->
+                    </div><!-- .sns -->
+                </div><!-- .info_wrap -->
+            </div><!-- .inner -->
+        </footer><!-- .footer -->
+    </div><!-- #wrap -->
+</body>
+
+</html>
