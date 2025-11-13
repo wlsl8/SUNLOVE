@@ -216,6 +216,10 @@ body::before{
     font-size: 17px;
     font-weight: 500;
     color: #6B4C3B;
+    display: inline-block;
+}
+.header .inner .nav .gnb li a:hover{
+    font-weight: 700;
 }
 .header .inner .util{
     margin-right: 17.5px;
