@@ -251,7 +251,7 @@ body::before{
     margin: 67px auto 330px;
     position: relative;
 }
-.main .inner .main_visual .main_img{
+.main .inner .main_visual .main_img ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -335,7 +335,7 @@ body::before{
 .section-01 .category .list .item .left .title{
     margin: 25px 0 26px 30px;
 }
-.section-01 .category .list .item .left .title h5{
+.section-01 .category .list .item .left .title h4{
     font-family: 'Rubik';
     font-size: 32px;
     font-weight: bold;
@@ -863,7 +863,7 @@ body::before{
     justify-content: space-between;
     align-items: flex-end;
 }
-.footer .inner .sns p{
+.footer .inner .sns span{
     font-family: 'Rubik';
     font-size: 15px;
     font-weight: 500;
