@@ -138,7 +138,7 @@ li{
 
 body{
     overflow-x: hidden;
-    background-color: #843232; /* FCFCFC */
+    background-color: #FCFCFC;
     position: static;
 }
 
@@ -147,6 +147,7 @@ body::before{
     max-width: 1600px;
     min-width: 1440px;
     width: 100%;
+    margin: 0 auto;
     height: 940px;
     display: block;
     position: absolute;
@@ -159,12 +160,7 @@ body::before{
     pointer-events: none;
     
 }
-/* .header .inner,
-.main .inner,
-.footer .inner{
-    max-width: 1920px;
-    margin: 0 auto;
-} */
+
 
 
 .header{
