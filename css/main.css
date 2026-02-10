@@ -375,9 +375,9 @@ body::before{
     display: none;
 }
 .section-01 .category .list .item .left .text{
-    margin: 30px 0 35px 40px;
+    margin: 30px 20px 35px 40px;
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
 }
 .section-01 .category .list .item .left .text p{
     font-family: 'Rubik';
@@ -437,11 +437,16 @@ body::before{
 .section-01 .look .list{
     height: 100%;
 }
-.section-01 .look .list .swiper-slide{
+.section-01 .look .list .item {
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.section-01 .look .list .swiper-slide{
+    width: 210px;
+    height: 100%;
 }
 .section-01 .look .list .item .img_wrap{
     width: 210px;
@@ -596,10 +601,12 @@ body::before{
 .section-02 .flyLight .right .list .item:hover .img_wrap{
     width: 225px;
     height: 225px;
+    margin-top: 7px;
 }
 .section-02 .flyLight .right .list .item:nth-child(5):hover .img_wrap{
     width: 150px;
     height: 83px;
+    margin-top: 0px;
 }
 .section-02 .flyLight .right .list .item:hover .img_wrap img.hover{
     display: block;
