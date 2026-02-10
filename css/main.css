@@ -375,7 +375,7 @@ body::before{
     display: none;
 }
 .section-01 .category .list .item .left .text{
-    margin: 30px 20px 35px 40px;
+    margin: 30px 25px 35px 40px;
     display: flex;
     justify-content: space-between;
 }
